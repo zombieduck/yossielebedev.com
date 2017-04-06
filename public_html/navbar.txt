@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="http://yossielebedev.com/Css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.yossielebedev.com/Css/font-awesome.min.css">
+<script>
+    function menu(){
+        $( ".cross" ).hide();
+        $( ".menu" ).hide();
+        $( ".hamburger" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
+            });
+        });
+        $( ".cross" ).click(function() {
+            $( ".menu" ).slideToggle( "slow", function() {
+                $( ".cross" ).hide();
+                $( ".hamburger" ).show();
+            });
+        });
+    }
+    menu();
+</script>
+<header>
+    <span>
+        <a href="http://yossielebedev.com">Yossie Lebedev</a>
+    </span>
+    <div class="social">
+        <a href="http://instagram.com/imyossie" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+       <a class='gallery' href='http://yossielebedev.com/Images/snapcode.png'><i class="fa fa-snapchat-ghost fa-2x fa-2x" aria-hidden="true"></i></a>
+       <a href="http://twitter.com/iimyossie" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    </div>
+    <button class="hamburger" style="">☰</button>
+    <button class="cross" style="display: none;">˟</button>
+    <div class="menu" style="display: none;">
+        <ul>
+            <a href="http://yossielebedev.com/content"><li>Image Gallery</li></a>
+            <a href="http://yossielebedev.com/reactiontimer"><li>Reaction Timer</li></a>
+            <a href="http://yossielebedev.com/drawwithmyface"><li>Draw With My Face</li></a>
+            <a href="http://yossielebedev.com/SteveJobs"><li>Steve Jobs English Project</li></a>
+            <a href="http://yossielebedev.com/amendmentproj"<li>6th Amendment Project</li></a>
+        </ul>
+    </div>
+</header>
+<style type="text/css">
+header{
+
+    left: 50%;
+    transform: translateX(-50%);
+	width:100%; 
+	background:#ffffff; 
+	height:60px; 
+	line-height:60px;
+	border-bottom:1px solid #dddddd;
+    z-index: 1000;
+    
+}
+header{display:inline-block; font-size:12px; z-index:1000;}
+span{padding-left:20px;}
+a{color:#336699;}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:1000;
+}
+header{
+    position: fixed; top:0; float:left;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:1000;
+}
+a > i {margin-right:1em;}
+.social{position: absolute;left: 47%;transform: translateX(-50%);top: 50%;transform: translateY(-50%);}
+.menu{z-index:1000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:10px 0 10px 0; border-bottom:#dddddd 1px solid;}
+.menu li {transition: .5s;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+</style>

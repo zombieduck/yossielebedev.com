@@ -1,0 +1,4 @@
+ErrorDocument 404 /404.html
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.yossielebedev\.com [NC]
+RewriteRule ^(.*)$ http://yossielebedev.com/$1 [L,R=301]

@@ -1,0 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@keyframes fadein {from {opacity:0.2;}to {opacity:1;}}
+@-moz-keyframes fadein {from {opacity:0.2;}to {opacity:1;}}
+@-webkit-keyframes fadein {from {opacity:0.2;}to {opacity:1;}}
+@-o-keyframes fadein { from {opacity:0.2;}opacity: 1}
+::-webkit-scrollbar {width: 10px; }
+::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px #fff; }
+::-webkit-scrollbar-thumb{background: #666669;}
+::-webkit-scrollbar-thumb:window-inactive {background: #666669; }
+img {max-width:100%;max-height:100%; z-index:100;}
+img:hover{box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);}
+body {margin:0;padding:0;font-family: Montserrat, sans-serif;animation: fadein 2s;-moz-animation: fadein 2s;-webkit-animation: fadein 2s;-o-animation: fadein 2s;overflow-x:hidden;color:#666669;}
+footer{background-color: #ccc; width:100%;}
+div > a{line-height: 80%;}
+ul{list-style:none;}
+.block{border: 8px solid #fff;}
+.centerDiv{margin:auto;}
+.centerText{text-align:center;}
+.parallax {background-image: url("http://yossielebedev.com/Images/glanzman.jpg"); min-height:42em; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+.infoText > p{font-size:2.4vh;}
+.infoText > h2{line-height:150%;}
+#waitGraph{line-height:200%;font-size:2.7vh;}
+#headings{position: absolute; top: 40%;transform: translateY(-60%);left: 50%;transform: translateX(-50%);}
+#photos{position:relative;margin:auto;top:3.1em;}
+#content{background-color: white;padding-left:5%;padding-right:5%;color:#666669;}
+#amendmentText{line-height: 90%; font-size: 300%;padding-left:5%;padding-right:10%;font-weight:bold;color:#666669;}
+#amendTitle{position:absolute; bottom:6%; left:3%; color:#ddd; font-size:8vh;}
+#amendSubTitle{ color:#ddd; font-size:50%;}
+#caption{font-size:1.9vh; position:absolute; bottom:3%;right:2%; color:#ddd;}
+#sources{padding:1%; position: relative; left: 5%; color:#666669;}
+#home {overflow-y: hidden;}
+#cartoon3{text-align: right; line-height: 140%; font-size: 3vh;}
+#cartoon1{line-height:125%;font-size:2.4vh;}
+#cartoon2{line-height:130%;font-size:2.2vh;}
